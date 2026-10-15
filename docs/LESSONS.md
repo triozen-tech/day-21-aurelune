@@ -184,3 +184,15 @@ Short rules learned the hard way on Days 1–7. `/new-site` and every round star
 149. **Keyframe stills join the clips, so all videos run in one batch**: the end keyframe of V(n) is the start keyframe of V(n+1); generate all stills first, then every clip together.
 150. **Claude Code never writes Flow/Veo prompts**: the director gives them to the user; Claude only records the pasted ones under "Prompts (as run)" in DESIGN.md.
 151. **No repo-size rule, but a single file over 50 MB goes through Git LFS** (`.gitattributes`); GitHub's hard limit is 100 MB per file.
+152. **Flow edits attach ONE image only** (the master still): variants stay pixel-aligned. A variant that can be built from cut-outs (e.g. a three-up line-up) is made in code (`scripts/lineup.py`), not in Flow.
+153. **Check every brand name online in Round 0**: the plan's name and a shortlist name both clashed with real brands on Day 19 (Lumen Phone became Halden).
+154. **Day 20 asset rules:** Claude never makes cut-outs (the user supplies any PNG); run `clean-mark` on a whole batch in one go (originals in `raw/_orig`) without viewing each image; replies stay 2-3 lines.
+155. **Cloud sessions:** the public day repo never holds reference screenshots; they go in the private repo `triozen-tech/refs` under `day<N>/` (see `docs/CLOUD.md`).
+156. **Hard still to film:** use the still as the Veo start frame; for a clip that must END on a still, generate it and reverse the clip.
+157. **Veo mid-clip dissolve:** trim around it and join with a 4-frame crossfade; in the scroll, skip the baked dissolve (`join` in `FrameScrub` timeline mode) so the picture never rests on it. Check with `scripts/join-test.mjs` (0 resting stops).
+158. **Fit stills to clip frames** (about 0.78 % side crop, +6 px) and crossfade at every hand-over, or the picture jumps.
+159. **Star/mark paint-out needs frequency separation**, not a flat fill (a flat fill leaves a visible patch on gradients).
+160. **Room masks:** lit minus unlit still; hand-build the mask where the still does not light the area.
+161. **Web-check brand names twice**: the first search missed a real project with the same name; the second one caught it.
+162. **OCR cannot see single-letter logos:** check back-of-phone style marks by eye.
+163. **Always burn the file name into contact-sheet tiles**, so a pick can be traced back to its file.

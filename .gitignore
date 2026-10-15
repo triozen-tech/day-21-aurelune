@@ -50,12 +50,16 @@ renders/
 refs/
 .triozen-ref-browser/
 
-# template repo: skip raw media, frame folders and big videos (keep the .gitkeep placeholders)
-raw/*
-!raw/.gitkeep
+# Day repo: raw finals and frames ARE tracked; work-in-progress folders and superseded intermediates stay local
+raw/_old/
+raw/_orig/
+raw/sheets/
+raw/v2-lift.mp4
+raw/v5-coast.mp4
+raw/v8-close.mp4
 raw-orig/
-public/frames/*
-!public/frames/.gitkeep
-*.mp4
-*.webm
+public/frames/_orig-star/
+public/frames/_test-v1/
+public/frames/_test-v2/
+checks/
 .cache/

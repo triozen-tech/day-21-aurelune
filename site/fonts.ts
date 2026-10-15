@@ -1,2 +1,3 @@
-// Fonts for THIS site: Round 1 installs the chosen pair (npm i @fontsource-variable/<name>) and imports it here.
-export {};
+import "@fontsource/cormorant/500.css";
+import "@fontsource/cormorant/600.css";
+import "@fontsource-variable/jost";

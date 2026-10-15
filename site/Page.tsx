@@ -1,16 +1,31 @@
-/** Placeholder page: the kit is ready, today's site is not built yet. Run /new-site (Round 0 → site/DESIGN.md). */
+import AuLoader from "./components/AuLoader";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Residences from "./components/Residences";
+import VillaDetail from "./components/VillaDetail";
+import Amenities from "./components/Amenities";
+import Locations from "./components/Locations";
+import Story from "./components/Story";
+import Booking from "./components/Booking";
+import Footer from "./components/Footer";
+import Key from "./components/Key";
+import CursorPill from "./components/CursorPill";
+
 export default function Page() {
   return (
-    <main className="grid min-h-screen place-items-center px-6 text-center">
-      <div>
-        <p className="eyebrow">Showreel Kit</p>
-        <h1 className="font-display mt-4 text-[clamp(40px,6vw,88px)] leading-none">Today&apos;s site starts here.</h1>
-        <p className="mt-6 text-muted">
-          Run <code>/new-site</code> · effects at <a className="underline" href="/lab">/lab</a> · layouts at{" "}
-          <a className="underline" href="/lab/sections">/lab/sections</a> · patterns at{" "}
-          <a className="underline" href="/patterns">/patterns</a>
-        </p>
-      </div>
+    <main className="au">
+      <AuLoader />
+      <Hero />
+      <Residences />
+      <VillaDetail />
+      <Amenities />
+      <Locations />
+      <Story />
+      <Booking />
+      <Footer />
+      <Key />
+      <CursorPill />
+      <Nav />
     </main>
   );
 }

@@ -1,26 +1,25 @@
 import type { SiteMeta, Theme } from "@/lib/site";
 
-// Placeholder: a new day starts here. Round 0 writes site/DESIGN.md, Round 1 rewrites this file for the brand.
-
 export const meta: SiteMeta = {
-  name: "Showreel Kit",
-  title: "Showreel Kit — new site",
-  description: "Blank starting point for today's showcase site.",
-  loaderText: "Kit",
-  loader: true,
-  cursor: true,
-  record: { duration: 30 },
+  name: "Aurelune Residences",
+  title: "Aurelune Residences — Live inside the light",
+  description: "Three private coastal villas. Concept website by Triozen Tech.",
+  loaderText: "Aurelune",
+  loader: false,
+  cursor: false,
+  record: { duration: 36 },
 };
 
 export const theme: Theme = {
-  bg: "#0e0e0f",
-  surface: "#18181a",
-  text: "#f2f2f0",
-  muted: "#9a9a96",
-  accent: "#f2f2f0",
-  accentText: "#0e0e0f",
-  line: "#2a2a2c",
-  fontDisplay: "system-ui, sans-serif",
-  fontBody: "system-ui, sans-serif",
+  bg: "#EDE6DA",
+  surface: "#F8F4EC",
+  text: "#1E1B17",
+  muted: "#6E655A",
+  accent: "#B88A4A",
+  accentText: "#1E1B17",
+  line: "rgba(30,27,23,0.18)",
+  fontDisplay: "'Cormorant', serif",
+  fontBody: "'Jost Variable', sans-serif",
   radius: 0,
+  heroText: "#EDE6DA",
 };
